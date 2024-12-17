@@ -1,0 +1,100 @@
+* {
+    border: 1px solid black;
+    font-family: Nuckle, sans-serif;
+    transition:all .3s;
+}
+.header_div>div:hover {
+    transition:all .3s;
+}
+.header_div>div:hover>svg>g>path {
+    transition: all .3s;
+    stroke: gray;
+}
+.section_1 {
+    height: 57vw;
+}
+.section_1>img {
+    position: absolute;
+    z-index: -1;
+}
+@media (min-width:1450px) {
+    .section_1>img {
+        position: absolute;
+        width:150%
+    }
+    .section_3>img {
+        position: absolute;
+        width:150%
+    }
+}
+* {
+    opacity: 0;
+    animation: ani 1s forwards;
+  }
+  
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.section_2>img {
+    min-width: 300px;
+}
+.section_2>div>div {
+    max-width: 500px;
+    transition: all .3s;
+}
+.section_3>img {
+    position: absolute;
+    z-index: -1;
+}
+.section_3 {
+    height: 57vw;
+}
+.section_3>div {
+    max-width: 40vw;
+}
+.section_4>img {
+    min-width: 300px;
+}
+.section_4>div>div {
+    max-width: 500px;
+    transition: all .3s;
+}
+.section_5>img {
+    min-width: 300px;
+}
+.section_5>div>div>svg {
+    min-width: 30px;
+}
+.section_5>div>div>div {
+    min-width: 30vw;
+}
+.section_5>div>div {
+    max-width: 40vw;
+}
+.circle {
+    border: 2px solid #f0f0f0;
+    border-radius: 99990px;
+    padding: 2px 17px 2px 1px;
+    width: 33px;
+    height: 33px;
+    background: #000;
+}
+.circle_1 {
+    border-radius: 99990px 0 0 99990px;
+    width: 14px;
+    height: 29px;
+    background: #efe1cb;
+    margin-left: -1px;
+    margin-top: -2px;
+}
+.section_6>div {
+    transition: all .3s;
+}
+.section_6>div>div>svg>g>path {
+    transition: all .3s;
+}
+.section_6>div>div>svg>path {
+    transition: all .3s;
+}

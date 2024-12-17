@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project4</title>
+    <link rel="stylesheet" href="Project4.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-50 bg-gray-100 flex w-full justify-between ">
+      <div class="m-3 md:ml-5 lg:ml-20">
+        <svg width="111" height="13" viewBox="0 0 111 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_0_27)">
+              <path d="M29.4873 9.52874V0.806241H28.1504V10.9825H34.3698V9.64504H29.6036C29.5454 9.70319 29.4873 9.58689 29.4873 9.52874ZM43.5536 0.689941C42.1586 0.689941 40.8217 1.27144 39.8336 2.25999C38.8454 3.24854 38.3223 4.58599 38.3223 5.92344C38.3223 7.31904 38.8454 8.59834 39.8336 9.58689C40.7636 10.5754 42.1586 11.1569 43.5536 11.1569C44.9486 11.1569 46.2854 10.6336 47.2736 9.58689C48.2617 8.59834 48.7848 7.26089 48.7848 5.92344C48.7848 4.52784 48.2617 3.24854 47.2736 2.25999C46.2854 1.21329 44.9486 0.689941 43.5536 0.689941ZM46.2854 8.65649C45.5298 9.41244 44.5417 9.81949 43.5536 9.81949C42.5654 9.81949 41.5773 9.41244 40.8217 8.65649C40.0661 7.90054 39.6592 6.97014 39.6592 5.92344C39.6592 4.87674 40.0661 3.94634 40.8217 3.19039C41.5192 2.43444 42.5073 2.02739 43.5536 2.02739C44.5417 2.02739 45.5879 2.43444 46.2854 3.19039C46.9829 3.94634 47.3898 4.87674 47.3898 5.92344C47.4479 6.97014 47.0411 7.90054 46.2854 8.65649ZM17.1648 9.52874V6.73754C17.1648 6.67939 17.2229 6.62124 17.2811 6.62124H21.8729V5.28379H17.2811C17.2229 5.28379 17.1648 5.22564 17.1648 5.16749V2.37629C17.1648 2.31814 17.2229 2.25999 17.2811 2.25999H21.9892V0.922541H15.8279V11.0988H22.0473V9.76134H17.2811C17.2229 9.70319 17.1648 9.58689 17.1648 9.52874ZM5.19105 8.36574C5.19105 8.42389 5.13293 8.42389 5.0748 8.42389C5.01668 8.42389 4.95855 8.42389 4.95855 8.36574L1.93605 0.806241H0.424805L4.55168 10.9825H5.5398L9.66668 0.806241V0.748092H8.21355L5.19105 8.36574ZM94.5292 2.14369H97.5517C97.6098 2.14369 97.6679 2.20184 97.6679 2.25999V10.9825H99.0048V2.25999C99.0048 2.20184 99.0629 2.14369 99.1211 2.14369H102.144V0.806241H94.4711V2.14369H94.5292ZM55.9923 3.59744V2.25999C55.9923 2.20184 55.9923 2.20184 56.0504 2.20184H58.3754C58.8404 2.20184 59.2473 2.31814 59.5961 2.60889C60.0611 2.95779 60.2936 3.48114 60.2936 4.06264C60.2936 4.41154 60.1773 4.81859 59.9448 5.10934C59.7123 5.40009 59.7123 5.80714 60.0029 6.09789C60.1192 6.21419 60.2936 6.27234 60.4679 6.27234C60.6423 6.27234 60.8167 6.21419 60.9329 6.09789L60.9911 6.03974C61.4561 5.51639 61.6886 4.76044 61.6886 4.06264C61.6886 3.30669 61.4561 2.55074 60.9329 1.96924C60.5261 1.44589 59.7123 0.806241 58.3173 0.806241H54.5973V11.0406H55.9923V6.03974C55.9923 6.03974 55.9923 5.98159 56.0504 5.98159H56.1086L60.3517 10.9825L60.4098 11.0406H62.2117L59.0148 7.26089L55.9923 3.59744ZM108.305 11.0406H109.7V0.806241H108.305V11.0406ZM80.6954 2.14369H83.7179C83.7761 2.14369 83.8342 2.20184 83.8342 2.25999V10.9825H85.1711V2.25999C85.1711 2.20184 85.2292 2.14369 85.2873 2.14369H88.3098V0.806241H80.6373V2.14369H80.6954ZM69.7098 9.64504C69.7098 9.64504 69.6517 9.58689 69.6517 9.52874V6.73754C69.6517 6.67939 69.7098 6.62124 69.7679 6.62124H74.3598V5.28379H69.7679C69.7098 5.28379 69.6517 5.22564 69.6517 5.16749V2.37629C69.6517 2.31814 69.7098 2.25999 69.7679 2.25999H74.4179V0.922541H68.2567V11.0988H74.4761V9.76134H69.7679C69.7679 9.70319 69.7679 9.64504 69.7098 9.64504Z" fill="#141615" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_27">
+                <rect width="110" height="11.63" fill="white" transform="translate(0.352905 0.689941)" />
+              </clipPath>
+            </defs>
+          </svg>
+      </div>
+          <div class=" header_div w-content hidden  text-3 md:flex gap-1 lg:gap-5">
+            <div class="flex mt-2 hover:cursor-pointer hover:text-gray-500 hover:stroke-gray-500">ELECTRIC
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-2">
+                    <g clip-path="url(#clip0_0_52)">
+                      <path d="M1.66183 1.12988L7.0558 6.51703L12.4498 1.12988" stroke="black" stroke-width="1.19866" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_52">
+                        <rect width="12.7879" height="7.38714" fill="white" transform="translate(0.661835 0.129883)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="flex mt-2 hover:text-gray-500 hover:stroke-gray-500 hover:cursor-pointer">CITY
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-2">
+                    <g clip-path="url(#clip0_0_52)">
+                      <path d="M1.66183 1.12988L7.0558 6.51703L12.4498 1.12988" stroke="black" stroke-width="1.19866" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_52">
+                        <rect width="12.7879" height="7.38714" fill="white" transform="translate(0.661835 0.129883)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="flex mt-2 hover:text-gray-500 hover:stroke-gray-500 hover:cursor-pointer">KIDS
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-2">
+                    <g clip-path="url(#clip0_0_52)">
+                      <path d="M1.66183 1.12988L7.0558 6.51703L12.4498 1.12988" stroke="black" stroke-width="1.19866" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_52">
+                        <rect width="12.7879" height="7.38714" fill="white" transform="translate(0.661835 0.129883)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="mt-2 hover:text-gray-500 hover:stroke-gray-500 hover:cursor-pointer">ACCESSORIES</div>
+            <div class="mt-2 hover:text-gray-500 hover:stroke-gray-500 hover:cursor-pointer">STORIES</div>
+            <div class="flex mt-2 hover:text-gray-500 hover:stroke-gray-500 hover:cursor-pointer">LEASING
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-2">
+                    <g clip-path="url(#clip0_0_52)">
+                      <path d="M1.66183 1.12988L7.0558 6.51703L12.4498 1.12988" stroke="black" stroke-width="1.19866" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_52">
+                        <rect width="12.7879" height="7.38714" fill="white" transform="translate(0.661835 0.129883)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+          </div>
+            <div class="flex gap-5 pt-3 mr-3 md:mr-5 lg:mr-10 xl:gap-10">
+                <div class="flex hover:cursor-pointer"> <div class="-mt-1">EN</div>
+                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_0_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-2" width="11" height="19">
+                          <path d="M10.3642 -1.25H0.864197V16.25H10.3642V-1.25Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_80)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.864197 -1.25V16.25H10.3642V-1.25H0.864197Z" fill="#2E42A5" />
+                          <path d="M-0.193451 14.9997L1.89705 17.1711L10.4118 1.1109L11.5145 -2.11602L9.27903 -2.8418L5.80603 4.07906L3.01065 8.74211L-0.193451 14.9997Z" fill="white" />
+                          <path d="M0.0925903 16.521L1.15761 17.7811L11.1184 -2.41602H9.623L0.0925903 16.521Z" fill="#F50100" />
+                          <path d="M11.4217 14.9997L9.33123 17.1711L0.816491 1.1109L-0.286194 -2.11602L1.94929 -2.8418L5.42225 4.07906L8.21763 8.74211L11.4217 14.9997Z" fill="white" />
+                          <path d="M11.3506 16.0919L10.2856 17.352L6.04419 8.70459L4.78669 7.73843L-0.39212 -2.10474H1.10328L6.2792 7.50479L7.65403 8.66332L11.3506 16.0919Z" fill="#F50100" />
+                          <mask id="mask1_0_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-3" width="11" height="21">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73601 -2.70825H4.49298V4.58342H0.278931V10.4167H4.49298V17.7084H6.73601V10.4167H10.9664V4.58342H6.73601V-2.70825Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_0_80)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73601 -2.70825H4.49298V4.58342H0.278931V10.4167H4.49298V17.7084H6.73601V10.4167H10.9664V4.58342H6.73601V-2.70825Z" fill="#F50100" />
+                            <path d="M4.49298 -2.70817V-4.1665H3.89923V-2.70817H4.49298ZM6.73601 -2.70817H7.32976V-4.1665H6.73601V-2.70817ZM4.49298 4.5835V6.04183H5.08675V4.5835H4.49298ZM0.278932 4.5835V3.12516H-0.314819V4.5835H0.278932ZM0.278932 10.4168H-0.314819V11.8752H0.278932V10.4168ZM4.49298 10.4168H5.08675V8.9585H4.49298V10.4168ZM4.49298 17.7085H3.89923V19.1668H4.49298V17.7085ZM6.73601 17.7085V19.1668H7.32976V17.7085H6.73601ZM6.73601 10.4168V8.9585H6.14226V10.4168H6.73601ZM10.9664 10.4168V11.8752H11.5601V10.4168H10.9664ZM10.9664 4.5835H11.5601V3.12516H10.9664V4.5835ZM6.73601 4.5835H6.14226V6.04183H6.73601V4.5835ZM4.49298 -1.24984H6.73601V-4.1665H4.49298V-1.24984ZM5.08675 4.5835V-2.70817H3.89923V4.5835H5.08675ZM0.278932 6.04183H4.49298V3.12516H0.278932V6.04183ZM0.872682 10.4168V4.5835H-0.314819V10.4168H0.872682ZM4.49298 8.9585H0.278932V11.8752H4.49298V8.9585ZM5.08675 17.7085V10.4168H3.89923V17.7085H5.08675ZM6.73601 16.2502H4.49298V19.1668H6.73601V16.2502ZM6.14226 10.4168V17.7085H7.32976V10.4168H6.14226ZM10.9664 8.9585H6.73601V11.8752H10.9664V8.9585ZM10.3726 4.5835V10.4168H11.5601V4.5835H10.3726ZM6.73601 6.04183H10.9664V3.12516H6.73601V6.04183ZM6.14226 -2.70817V4.5835H7.32976V-2.70817H6.14226Z" fill="white" />
+                          </g>
+                        </g>
+                      </svg>
+                </div>
+                <div class="hover:cursor-pointer">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_99)">
+                          <path d="M11.0186 6.91333C10.9519 6.90666 10.8719 6.90666 10.7986 6.91333C9.21152 6.86 7.95123 5.56 7.95123 3.96C7.95123 2.32666 9.27153 1 10.9119 1C12.5456 1 13.8726 2.32666 13.8726 3.96C13.8659 5.56 12.6057 6.86 11.0186 6.91333Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.57448 9.82833C5.96077 10.9083 5.96077 12.6683 7.57448 13.7417C9.40823 14.9683 12.4156 14.9683 14.2494 13.7417C15.863 12.6617 15.863 10.9017 14.2494 9.82833C12.4222 8.60833 9.4149 8.60833 7.57448 9.82833Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_0_99">
+                            <rect width="21.0954" height="15.6617" fill="white" transform="translate(0.364197)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </div>
+                <div class="hover:cursor-pointer">
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.29407 4.77447V4.1278C8.29407 2.6278 9.50101 1.15447 11.0014 1.01447C12.7885 0.841136 14.2954 2.2478 14.2954 4.00114V4.92114" stroke="black" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.29434 14.2545H13.2952C15.9758 14.2545 16.4559 13.1811 16.596 11.8745L17.0961 7.87449C17.2761 6.24781 16.8094 4.92114 13.9621 4.92114H8.62752C5.78021 4.92114 5.31343 6.24781 5.49347 7.87449L5.99359 11.8745C6.13362 13.1811 6.61373 14.2545 9.29434 14.2545Z" stroke="black" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.2072 8.00049H13.2132" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8.58362 8.00049H8.58961" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </div>
+            </div>
+    </header>
+    <main class="h-full">
+      <div class="section_1 w-full flex flex-col justify-center text-white">
+        <img src="img/Hero_Section.png" alt="">
+        <div class="font-medium pl-5 pt-10 sm:text-xl lg:text-2xl lg:pl-10 xl:text-3xl xl:pl-14 2xl:text-4xl 2xl:pl-20">
+          VELORETTI BUSINESS
+        </div>
+        <div class="font-bold text-xl pl-5 sm:text-4xl lg:text-5xl lg:pl-10 xl:text-6xl xl:pl-14 2xl:text-7xl 2xl:pl-20">
+          Bike Lease Plan For Employees.
+        </div>
+      </div>
+      <div class="section_2 w-full p-5 space-x-20 flex flex-col text-gray-700 sm:flex-row lg:p-10 xl:p-20">
+        <img src="img/Text-media-static_background.png" alt="">
+        <div class="mt-10 -ml-5 xl:ml-20">
+          <h1 class="text-4xl lg:text-5xl">Bike plans for employees.</h1>
+          <div class="mt-5 lg:text-lg lg:mt-10">Veloretti Electrics benefit both the environment and the health of your employees. Oh, and they look good too. Cost-free for the employer and outside of the WKR.</div>
+          <div class="mt-5 w-content text-gray-900 hover:cursor-pointer hover:text-xl lg:text-2xl lg:hover:text-3xl lg:mt-10">Discover more</div>
+        </div>
+      </div>
+      <div class="section_3 flex flex-col text-white justify-center">
+        <div>
+          <h1 class="w-content text-xl font-bold pl-5 pt-10 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl sm:pl-10 lg:pl-20 xl:pl-40 2xl:pl-60">Service,
+            maintenance and
+            insurance</h1>
+          <div class="hidden sm:block pl-5 mt-5 md:mt-10 sm:pl-10 lg:pl-20 xl:pl-40 2xl:pl-60 sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">The lease includes an all-in service package.
+            Throughout the entire 36 months, you are
+            fully insured against damage, theft and
+            maintenance. In addition, you always have
+            access to roadside assistance. </div>
+        </div>
+        <img src="img/Text-media-new_background.png" alt="">
+      </div>
+      <div class="section_4 flex w-full p-5 space-x-20 flex flex-col text-gray-700 sm:flex-row lg:p-10 xl:p-20">
+        <img src="img/Text-media-static_background23.png" alt="">
+        <div class="mt-10 -ml-5 xl:ml-20">
+          <h1 class="text-4xl lg:text-5xl">Free of charge for
+            employers</h1>
+          <div class="mt-5 lg:text-lg lg:mt-10">The bike plan is totally independent of the WKR and is free for you as
+            an employer. The employee pays the lease costs and you, as the
+            employer, decide whether you want to contribute to the costs.</div>
+          <div class="mt-5 w-content text-gray-900 hover:cursor-pointer hover:text-xl lg:text-2xl lg:hover:text-3xl lg:mt-10">Cost example</div>
+        </div>
+      </div>
+      <div class="section_5 flex flex-col-reverse w-full p-5 space-x-0 text-gray-700 sm:flex-row sm:space-x-20 lg:p-10 xl:p-20">
+        <div class="flex flex-col gap-5 mt-10 ml-5 xl:ml-20 lg:mt-20 lg:gap-10">
+          <h1 class="text-4xl lg:text-5xl ml-5">How it works</h1>
+          <div class="flex">
+            <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-1 ml-5">
+              <rect x="0.424011" y="0.5" width="25" height="28" rx="12.5" fill="#2A2A2A" fill-opacity="0.1" />
+            </svg>
+            <div>
+              <h1 class="text-black-700 font-semibold xl:text-2xl 2xl:text-3xl">Register your company</h1>
+              <div class="xl:text-lg xl:mt-5 2xl:text-xl">Fill in our registration form with your company details. After
+                your registration, our leasing partner will do a credit check. You
+                will hear whether your application has been approved within 24
+                hours.</div>
+            </div>
+          </div>
+          <div class="flex">
+            <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-1 ml-5">
+              <rect x="0.424011" y="0.5" width="25" height="28" rx="12.5" fill="#2A2A2A" fill-opacity="0.1" />
+            </svg>
+            <div>
+              <h1 class="text-black-700 font-semibold xl:text-2xl 2xl:text-3xl">Determine the requirements</h1>
+              <div class="xl:text-lg xl:mt-5 2xl:text-xl">You get acces to the digital platform. Set the requirements for
+                your employees and share the registration link.</div>
+            </div>
+          </div>
+          <div class="flex">
+            <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-1 ml-5">
+              <rect x="0.424011" y="0.5" width="25" height="28" rx="12.5" fill="#2A2A2A" fill-opacity="0.1" />
+            </svg>
+            <div>
+              <h1 class="text-black-700 font-semibold xl:text-2xl 2xl:text-3xl">Ride your bike!</h1>
+              <div class="xl:text-lg xl;mt-5 2xl:text-xl">Let's go! Your employees can choose their bikes and they'll be
+                delivered straight to their homes.</div>
+            </div>
+          </div>
+          <div class="flex">
+            <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-1 ml-5">
+              <rect x="0.424011" y="0.5" width="25" height="28" rx="12.5" fill="#2A2A2A" fill-opacity="0.1" />
+            </svg>
+            <div>
+              <h1 class="text-black-700 font-semibold xl:text-2xl 2xl:text-3xl">Administration</h1>
+              <div class="xl:text-lg xl:mt-5 2xl:text-xl">Everything in one place. The digital platform gives you an easy
+                overview of all the information for your payroll.</div>
+            </div>
+          </div>
+        </div>
+        <img src="img/div.text-media-static_background__qGDyA.png" alt="" class="mr-10 sm:h-80 sm:mt-40 lg:h-full lg:mt-20">
+      </div>
+      <div class="section_6 flex flex-col md:flex-row justify-center">
+        <div class="bg-zinc-300 m-5 rounded-2xl hover:cursor-pointer hover:bg-zinc-400">
+          <div class="flex justify-between mx-2 mt-3 sm:mx-5">
+            <div class="text-black font-bold sm:text-2xl">Electric Ace<sup>Two</sup></div>
+            <div class="sm:text-2xl">€69,07 NET/MONTH</div>
+          </div>
+          <div class="flex items-center justify-center">
+            <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block md:hidden xl:block">
+              <g clip-path="url(#clip0_0_236)">
+                <path d="M14.9275 5.3375L12.715 3.125L0.340027 15.5L12.715 27.875L14.9275 25.6625L4.76503 15.5L14.9275 5.3375Z" fill="black" class="hover:fill-slate-300"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_0_236">
+                  <rect width="14.5875" height="30.75" fill="white" transform="translate(0.340027 0.125)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <img src="img/Span.png" alt="">
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block md:hidden xl:block">
+              <path d="M7.33002 25.7875L9.54252 28L22.0425 15.5L9.54252 3L7.33002 5.2125L17.6175 15.5L7.33002 25.7875Z" fill="black" class="hover:fill-slate-300"/>
+            </svg>
+          </div>
+          <div class="flex justify-center">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="-mt-0.5">
+              <g filter="url(#filter0_d_0_241)">
+                <rect x="2.83002" y="2.5" width="40" height="40" rx="20" fill="white" fill-opacity="0.01" shape-rendering="crispEdges" />
+                <rect x="7.33002" y="7" width="31" height="31" rx="15.5" fill="black" stroke="#F0F0F0" stroke-width="2" />
+              </g>
+              <defs>
+                <filter id="filter0_d_0_241" x="0.830017" y="0.5" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_0_241" />
+                  <feOffset />
+                  <feGaussianBlur stdDeviation="0.5" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_241" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_241" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5.33002" y="5" width="31" height="31" rx="15.5" fill="#606160" stroke="#F0F0F0" stroke-width="2" />
+            </svg>
+            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5.33002" y="5" width="31" height="31" rx="15.5" fill="#DDD9CD" stroke="#F0F0F0" stroke-width="2" />
+            </svg>
+            <div class="circle mt-1 ml-1">
+              <div class="circle_1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-zinc-300 m-5 rounded-2xl hover:cursor-pointer hover:bg-zinc-400">
+          <div class="flex justify-between mx-2 mt-3 sm:mx-5">
+            <div class="text-black font-bold sm:text-2xl">Electric Ivy<sup>Two</sup></div>
+            <div class="sm:text-2xl">€69,07 NET/MONTH</div>
+          </div>
+          <div class="flex items-center justify-center">
+            <svg width="15" height="31" viewBox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block md:hidden xl:block">
+              <g clip-path="url(#clip0_0_236)">
+                <path d="M14.9275 5.3375L12.715 3.125L0.340027 15.5L12.715 27.875L14.9275 25.6625L4.76503 15.5L14.9275 5.3375Z" fill="black" class="hover:fill-slate-300"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_0_236">
+                  <rect width="14.5875" height="30.75" fill="white" transform="translate(0.340027 0.125)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <img src="img/Bike-Wrapper.png" alt="">
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block md:hidden xl:block">
+              <path d="M7.33002 25.7875L9.54252 28L22.0425 15.5L9.54252 3L7.33002 5.2125L17.6175 15.5L7.33002 25.7875Z" fill="black" class="hover:fill-slate-300"/>
+            </svg>
+          </div>
+          <div class="flex justify-center">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="-mt-0.5">
+              <g filter="url(#filter0_d_0_241)">
+                <rect x="2.83002" y="2.5" width="40" height="40" rx="20" fill="white" fill-opacity="0.01" shape-rendering="crispEdges" />
+                <rect x="7.33002" y="7" width="31" height="31" rx="15.5" fill="black" stroke="#F0F0F0" stroke-width="2" />
+              </g>
+              <defs>
+                <filter id="filter0_d_0_241" x="0.830017" y="0.5" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_0_241" />
+                  <feOffset />
+                  <feGaussianBlur stdDeviation="0.5" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_241" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_241" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5.33002" y="5" width="31" height="31" rx="15.5" fill="#606160" stroke="#F0F0F0" stroke-width="2" />
+            </svg>
+            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5.33002" y="5" width="31" height="31" rx="15.5" fill="#DDD9CD" stroke="#F0F0F0" stroke-width="2" />
+            </svg>
+            <div class="circle mt-1 ml-1">
+              <div class="circle_1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_7 flex flex-col w-2/3 m-auto mt-20 gap-10">
+        <h1 class="text-center text-3xl lg:text-5xl">Get in touch</h1>
+        <input type="text" placeholder=" First name" class="border border-gray rounded p-1 lg:py-3">
+        <input type="text" placeholder=" Last name" class="border border-gray rounded p-1 lg:py-3">
+        <input type="text" placeholder=" Email adress" class="border border-gray rounded p-1 lg:py-3">
+        <input type="text" placeholder=" Phone number" class="border border-gray rounded p-1 lg:py-3">
+        <input type="text" placeholder=" Company name" class="border border-gray rounded p-1 lg:py-3">
+        <input type="text" placeholder=" Company size" class="border border-gray rounded p-1 lg:py-3" >
+        <input type="text" placeholder=" Number of bikes" class="border border-gray rounded p-1 lg:py-3">
+        <input type="text" placeholder=" How we can help" class="border border-gray rounded p-1 pb-20 lg:pt-3 pb-40">
+        <button class="text-white bg-zinc-500 rounded-2xl hover:bg-zinc-600 py-3 lg:text-2xl">Send the request</button>
+      </div>
+    </main>
+    <footer class="bg-zinc-900 flex flex-col mt-20 pl-5 pt-5 gap-5 sm:flex-row justify-between 2xl:px-20">
+      <div>
+        <h1 class="text-white text-2xl hover:cursor-pointer xl:text-4xl">Explorer</h1>
+        <div class="hidden text-gray-400 mt-3 sm:block xl:text-xl">
+          <div>Electric bikes</div>
+          <div>City bikes</div>
+          <div>Kids bikes</div>
+          <div>Accessories</div>
+          <div>Outlet</div>
+          <div>Business</div>
+          <div>Insurance Electric</div>
+          <div>Size guide</div>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-white text-2xl hover:cursor-pointer xl:text-4xl">About</h1>
+        <div class="hidden text-gray-400 mt-3 sm:block xl:text-xl">
+          <div>About us</div>
+          <div>Journal</div>
+          <div>Reviews</div>
+          <div>Press</div>
+          <div>Jobs</div>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-white text-2xl hover:cursor-pointer xl:text-4xl">Help</h1>
+        <div class="hidden text-gray-400  mt-3 sm:block xl:text-xl">
+          <div>Contact</div>
+          <div>FAQ</div>
+          <div>Delivery</div>
+          <div>Assembly & manuals</div>
+          <div>Payment options</div>
+          <div>Privacy policy</div>
+          <div>Terms & conditions</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="flex justify-between pr-5 mt-10">
+            <h1 class="text-white text-2xl xl:text-4xl">Join the ride</h1>
+            <div class="bg-white rounded-2xl w-8 h-8 p-1 pl-1.25 hover:cursor-pointer hover:bg-black">
+              <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_0_422)">
+                  <path d="M10.0417 0.822053L1.24297 8.91779C0.773614 9.37207 0.612102 10.3469 1.13152 10.8783C1.65127 11.4098 2.63715 11.4063 3.153 10.8714L9.60741 4.94028V23.3943C9.60741 24.1394 10.2296 24.7436 10.9968 24.7436C11.764 24.7436 12.3862 24.1394 12.3862 23.3943V4.94028L18.8406 10.8714C19.3565 11.4063 20.3798 11.4418 20.8621 10.8783C21.3078 10.3575 21.3272 9.3906 20.7506 8.91779L11.9519 0.822052C11.5966 0.477887 10.6622 0.20965 10.0417 0.822053Z" fill="black" class="hover:fill-white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_422">
+                    <rect width="20.3809" height="24.287" fill="white" transform="translate(0.809509 0.456543)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="text-gray-400 xl:text-xl">Sign up for our newsletter.</div>
+          <div class="flex justify-between border border-white rounded-3xl my-10 mr-5">
+            <div class="text-gray-400 py-3 ml-1 hover:cursor-pointer">Enter your email address here</div>
+            <div class="bg-white rounded-3xl px-1 pt-3 hover:cursor-pointer hover:text-zinc-400">Subscribe</div>
+          </div>
+        </div>
+        <div class="flex text-gray-400 px-10 gap-5 xl:text-xl">
+          <input type="checkbox">
+          <div>By signing up, I agree to the <u>privacy policy</u> of Veloretti.</div>
+        </div>
+        <div class="flex my-5 justify-evenly">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:w-8 h-8">
+            <g clip-path="url(#clip0_0_407)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.579987 6.59649C0.579987 9.84294 2.93831 12.5426 6.02269 13.09V8.37374H4.38988V6.56003H6.02269V5.10874C6.02269 3.47624 7.07477 2.56966 8.56281 2.56966C9.03415 2.56966 9.54254 2.64203 10.0138 2.7144V4.38337H9.17947C8.38102 4.38337 8.19978 4.78224 8.19978 5.29049V6.56003H9.94141L9.65133 8.37374H8.19978V13.09C11.2841 12.5426 13.6425 9.8435 13.6425 6.59649C13.6425 2.98485 10.7034 0.0300293 7.11124 0.0300293C3.51905 0.0300293 0.579987 2.98485 0.579987 6.59649Z" fill="white" fill-opacity="0.9" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_407">
+                <rect width="13.0625" height="13.06" fill="white" transform="translate(0.579987 0.0300293)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:w-8 h-8">
+            <g clip-path="url(#clip0_0_410)">
+              <path d="M7.64061 4.76577C6.35526 4.76577 5.30632 5.81473 5.30632 7.1001C5.30632 8.38546 6.35526 9.43442 7.64061 9.43442C8.92595 9.43442 9.97489 8.38546 9.97489 7.1001C9.97489 5.81473 8.92595 4.76577 7.64061 4.76577ZM14.6417 7.1001C14.6417 6.13344 14.6504 5.17555 14.5962 4.21065C14.5419 3.08989 14.2862 2.09521 13.4667 1.27567C12.6454 0.454357 11.6525 0.200436 10.5318 0.146149C9.56512 0.0918626 8.60724 0.100619 7.64236 0.100619C6.67572 0.100619 5.71784 0.0918626 4.75296 0.146149C3.63222 0.200436 2.63757 0.456108 1.81803 1.27567C0.99674 2.09696 0.742823 3.08989 0.688537 4.21065C0.634252 5.1773 0.643007 6.13519 0.643007 7.1001C0.643007 8.065 0.634252 9.02464 0.688537 9.98955C0.742823 11.1103 0.998491 12.105 1.81803 12.9246C2.63932 13.7458 3.63222 13.9998 4.75296 14.054C5.7196 14.1084 6.67747 14.0996 7.64236 14.0996C8.60899 14.0996 9.56687 14.1084 10.5318 14.054C11.6525 13.9998 12.6471 13.744 13.4667 12.9246C14.2879 12.1032 14.5419 11.1103 14.5962 9.98955C14.6522 9.02464 14.6417 8.06675 14.6417 7.1001ZM7.64061 10.6918C5.65305 10.6918 4.04899 9.08769 4.04899 7.1001C4.04899 5.11251 5.65305 3.50842 7.64061 3.50842C9.62817 3.50842 11.2322 5.11251 11.2322 7.1001C11.2322 9.08769 9.62817 10.6918 7.64061 10.6918ZM11.3793 4.20014C10.9153 4.20014 10.5405 3.82538 10.5405 3.36132C10.5405 2.89726 10.9153 2.52251 11.3793 2.52251C11.8434 2.52251 12.2181 2.89726 12.2181 3.36132C12.2182 3.47152 12.1967 3.58065 12.1545 3.68249C12.1124 3.78431 12.0507 3.87684 11.9727 3.95476C11.8948 4.03269 11.8023 4.09446 11.7005 4.13657C11.5986 4.17867 11.4895 4.20028 11.3793 4.20014Z" fill="white" fill-opacity="0.9" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_410">
+                <rect width="14" height="14" fill="white" transform="translate(0.642487 0.100098)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:w-8 h-8">
+            <g clip-path="url(#clip0_0_413)">
+              <path d="M8.81134 6.97833L7.17364 6.21416C7.03072 6.14781 6.91332 6.22218 6.91332 6.38041V7.81979C6.91332 7.97802 7.03072 8.05239 7.17364 7.98604L8.81062 7.22187C8.95426 7.15479 8.95426 7.04541 8.81134 6.97833ZM7.64249 0.100098C3.77645 0.100098 0.642487 3.23406 0.642487 7.1001C0.642487 10.9661 3.77645 14.1001 7.64249 14.1001C11.5085 14.1001 14.6425 10.9661 14.6425 7.1001C14.6425 3.23406 11.5085 0.100098 7.64249 0.100098ZM7.64249 9.94385C4.05937 9.94385 3.99666 9.62083 3.99666 7.1001C3.99666 4.57937 4.05937 4.25635 7.64249 4.25635C11.2256 4.25635 11.2883 4.57937 11.2883 7.1001C11.2883 9.62083 11.2256 9.94385 7.64249 9.94385Z" fill="white" fill-opacity="0.9" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_413">
+                <rect width="14" height="14" fill="white" transform="translate(0.642487 0.100098)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:w-8 h-8">
+            <g clip-path="url(#clip0_0_416)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.642487 1.22012C0.642487 0.923073 0.76049 0.638193 0.970536 0.428147C1.18058 0.218101 1.46546 0.100099 1.76252 0.100099H12.9275C13.0747 0.0998582 13.2205 0.128656 13.3566 0.184842C13.4926 0.241029 13.6163 0.323501 13.7204 0.427537C13.8246 0.531573 13.9072 0.655133 13.9635 0.791133C14.0198 0.927133 14.0488 1.07291 14.0487 1.22012V12.385C14.0489 12.5323 14.02 12.6781 13.9637 12.8142C13.9075 12.9502 13.825 13.0739 13.7209 13.178C13.6168 13.2822 13.4932 13.3648 13.3572 13.4211C13.2211 13.4774 13.0753 13.5064 12.9281 13.5063H1.76252C1.61538 13.5063 1.46969 13.4773 1.33376 13.421C1.19783 13.3646 1.07433 13.2821 0.97032 13.178C0.866308 13.0739 0.78382 12.9504 0.727569 12.8144C0.671318 12.6785 0.642407 12.5328 0.642487 12.3856V1.22012ZM5.94891 5.21152H7.76424V6.12314C8.02627 5.59908 8.69658 5.12743 9.70387 5.12743C11.635 5.12743 12.0926 6.17128 12.0926 8.08654V11.6343H10.1384V8.52285C10.1384 7.43208 9.87633 6.81661 9.21089 6.81661C8.28769 6.81661 7.90378 7.48022 7.90378 8.52285V11.6343H5.94891V5.21152ZM2.59736 11.5508H4.55223V5.12743H2.59736V11.5508ZM4.83193 3.0324C4.83562 3.19978 4.80583 3.36621 4.74433 3.52192C4.68282 3.67763 4.59083 3.81949 4.47376 3.93917C4.35669 4.05885 4.21689 4.15394 4.06257 4.21885C3.90825 4.28377 3.74252 4.31721 3.5751 4.31721C3.40768 4.31721 3.24195 4.28377 3.08763 4.21885C2.93331 4.15394 2.79351 4.05885 2.67644 3.93917C2.55936 3.81949 2.46738 3.67763 2.40587 3.52192C2.34437 3.36621 2.31458 3.19978 2.31827 3.0324C2.3255 2.70386 2.46109 2.39121 2.69601 2.16141C2.93092 1.93162 3.24648 1.80294 3.5751 1.80294C3.90372 1.80294 4.21928 1.93162 4.45419 2.16141C4.6891 2.39121 4.8247 2.70386 4.83193 3.0324Z" fill="white" fill-opacity="0.9" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_416">
+                <rect width="13.4062" height="13.4062" fill="white" transform="translate(0.642487 0.100098)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:w-8 h-8">
+            <g clip-path="url(#clip0_0_419)">
+              <path d="M11.3516 3.28534C11.2511 3.2334 11.1532 3.17644 11.0584 3.1147C10.7826 2.9324 10.5297 2.71759 10.3052 2.47492C9.74354 1.83234 9.53377 1.18046 9.4565 0.724054H9.45959C9.39505 0.345212 9.42173 0.100098 9.42577 0.100098H6.86747V9.99093C6.86747 10.1237 6.86747 10.255 6.86188 10.3847C6.86188 10.4008 6.86033 10.4157 6.8594 10.4331C6.8594 10.4402 6.8594 10.4477 6.85785 10.4551V10.4607C6.83089 10.8156 6.7171 11.1583 6.52652 11.459C6.33593 11.7595 6.07439 12.0088 5.76489 12.1846C5.44233 12.3681 5.07749 12.4642 4.70637 12.4638C3.51443 12.4638 2.54839 11.492 2.54839 10.2919C2.54839 9.09177 3.51443 8.12 4.70637 8.12C4.93201 8.11978 5.15625 8.15528 5.37078 8.22518L5.37388 5.62076C4.72263 5.53665 4.06101 5.5884 3.43075 5.77275C2.80051 5.95708 2.21531 6.27003 1.71207 6.69182C1.27112 7.07488 0.900415 7.53194 0.616632 8.04243C0.508639 8.22859 0.101185 8.97665 0.0518441 10.1907C0.0208111 10.8798 0.227797 11.5938 0.32648 11.8888V11.8951C0.388544 12.0688 0.629045 12.6618 1.02098 13.1616C1.33702 13.5626 1.71042 13.9147 2.12915 14.2069V14.2007L2.13536 14.2069C3.37385 15.0483 4.74703 14.9931 4.74703 14.9931C4.98474 14.9835 5.78103 14.9931 6.68531 14.5647C7.68828 14.0897 8.25926 13.3819 8.25926 13.3819C8.62404 12.959 8.91411 12.477 9.117 11.9568C9.3485 11.3484 9.42577 10.6186 9.42577 10.327V5.07964C9.45681 5.09826 9.87015 5.37161 9.87015 5.37161C9.87015 5.37161 10.4657 5.75324 11.3947 6.00178C12.0614 6.17863 12.9594 6.21586 12.9594 6.21586V3.6766C12.6447 3.71073 12.0057 3.61144 11.3516 3.28534Z" fill="white" fill-opacity="0.9" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_419">
+                <rect width="12.9107" height="14.8938" fill="white" transform="translate(0.0487061 0.100098)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
